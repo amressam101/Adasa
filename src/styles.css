@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    color: rgb(255, 255, 255);
+    background-color: rgb(10, 10, 10);
+    font-family: Tajawal, system-ui, -apple-system, sans-serif;
+}

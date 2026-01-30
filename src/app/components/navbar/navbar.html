@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg py-3 fixed-top">
+    <div class="container">
+        <div class="box-log d-flex justify-content-end align-items-center gap-2">
+            <div class="box-img">
+                <img src="/imgi_1_logo-GdqARQRt.png" alt="image loge">
+            </div>
+            <div class="box-content">
+                <p class="one">عدسة</p>
+                <p class="two d-none d-md-block">عالم التصوير الفوتوغرافي</p>
+            </div>
+        </div>
+        <button (click)="togleIcon()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i #iconOne class="fa-solid fa-bars"></i>
+            <i #iconTwo class="fa-solid fa-xmark d-none"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/home" routerLinkActive="active">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/blog" routerLinkActive="active">المدونة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/about" routerLinkActive="active">من نحن</a>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-end align-items-center gap-3">
+                <div class="box-scearch d-none d-lg-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="box-btn">
+                    <button routerLink="/blog">ابدأ القراءة</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
